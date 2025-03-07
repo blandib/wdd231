@@ -2,25 +2,90 @@
 <html lang="en">
 <head>
 <title>WDD231 Projects</title>
+<meta name="description" content= "[WDD 131 - Web Frontend Development] [Courses assignment portal] [Blandine Bukasa]">
+<meta name="author" content="Blandine Bukasa">
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="styles/large.css">
+<link rel="stylesheet" href="styles/normalization.css">
+<link rel="stylesheet" href="styles/small.css">
 
 </head>
 
-<body>
-    <header>
-<nav>
-
-<a href="index.html">Home</a>
-<a href=></a>
-<a href=></a>
-<a href=></a>
-<a href=></a>
-<a href=></a>
-<a href=></a>
-
-
-</nav>
-</header>
-
+<body id="homePage">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <header class="main-header">
+        <span class="header-content">
+            <img class="my-photo" src="images/blan.webp" alt="my-photo">
+            <h1 class="name">Blandine Bukasa</h1>
+        </span>
+       <!-- Hamburger Menu Button -->
+    <button class="hamburger" aria-label="Toggle navigation">
+        <span class="hamburger-icon"></span>
+    </button>
+    <!-- Navigation -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Chamber</a></li>
+                <li><a href="#" class="nav-link">GitHub Profile</a></li>
+                <li><a href="#" class="nav-link">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="main-title">Home</h1>
+        <div class="grid-container">
+            <section id="courseWork">
+                <div class="square medium">
+                    <h2 class="section-title">Course Work</h2>
+                    <ul>
+                        <li class="course-item"></li>
+                        <li class="course-item"></li>
+                        <li class="course-item"></li>
+                        <li class="course-item"></li>
+                        <li class="course-item"></li>
+                        <li class="course-item"></li>
+                        <li class="course-item"></li>
+                        <li class="course-item"></li>
+                        <li class="course-item"></li>
+                        <li class="course-item"></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="capeTown">
+                <div class="square small">
+                    <h2 class="section-title">Cape Town, South Africa</h2>
+                    <img src="images/table-Moutain.webp" alt="table-Mountain">
+                    <p>Table Mountain</p>
+                </div>
+            </section>
+        </div>
+        <section id="certificates">
+            
+            <h2 class="section-title">Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button id="all">All Courses</button>
+                <button id="wdd">WDD Courses</button>
+                <button id="cse">CSE Courses</button>
+            </div>
+            <div id="courses-container">
+                <div><p class="course-code">CSE 110</p></div>
+                <div><p class="course-code">CSE 111</p></div>
+                <div><p class="course-code">CSE 210</p></div>
+                <div><p class="course-code">WDD 130</p></div>
+                <div><p class="course-code">WDD 131</p></div>
+                <div><p class="course-code">WDD 231</p></div>
+            </div>
+            <p id="total-credits">Total Credits Required: <span id="credits">0</span></p>
+        </section>
+        
+    </main>
+    <footer class="main-footer">
+        <p>&copy;<span id="year"></span> by Blandine Bukasa Lusamba | South Africa </p>
+        <img class="South-Africa-Flag" src="images/South-Africa-Flag.jpg">
+        <p id="lastModified">Last Update: </p>
+    </footer>
 </body>

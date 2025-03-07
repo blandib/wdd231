@@ -1,0 +1,43 @@
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger menu */
+    }
+
+    .navigation {
+        display: none; /* Hide navigation by default */
+        position: absolute;
+        top: 80px; /* Adjust based on header height */
+        right: 20px;
+        background-color: #34495e;
+        border-radius: 4px;
+        padding: 10px;
+    }
+
+    .navigation.active {
+        display: block; /* Show navigation when active */
+    }
+
+    .navigation ul {
+        flex-direction: column; /* Stack links vertically */
+        gap: 10px;
+    }
+
+    .header-content {
+        gap: 10px; /* Reduce gap for smaller screens */
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .courses div {
+        flex: 1 1 100%; /* Full width for course items */
+    }
+
+    .main-footer {
+        flex-direction: column; /* Stack footer items vertically */
+        text-align: center;
+        gap: 10px;
+    }
+}
