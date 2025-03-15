@@ -1,0 +1,74 @@
+[
+    {
+        "name": "BM",
+        "address": "123 Innovation Drive, Johannesburg, South Africa",
+        "phone": "+27 10 123 4567",
+        "website": "https://www.techcorp.com",
+        "images": "images/BM.png",
+        "membershipLevel": 3,
+        "description": "with some focusing on speed and racing, while others prioritize comfort and adventure.",
+        "industry": "Moto"
+    },
+    {
+        "name": "BUY DEAL",
+        "address": "456 Eco Street, Johannesburg, South Africa",
+        "phone": "+27 11 987 6543",
+        "website": "https://www.greenearthsupplies.com",
+        "images": "images/BUY DEAL.png",
+        "membershipLevel": 2,
+        "description": "Grocery retail stores often emphasize convenience and affordability, offering items in various sizes and price ranges to suit different customer preferences. They may also feature promotions, discounts, and loyalty programs to encourage repeat visits.",
+        "industry": "Retail"
+    },
+    {
+        "name": "COOL",
+        "address": "789 Ocean Road, Johannesburg, South Africa",
+        "phone": "+27 12 345 6789",
+        "website": "https://www.bluewavemarketing.com",
+        "images": "images/COOL.png",
+        "membershipLevel": 1,
+        "description": "stores typically offer both alcoholic and non-alcoholic options, including soft drinks, juices, bottled water, energy drinks, tea, and coffee.",
+        "industry": "Foods"
+    },
+    {
+        "name": "RM",
+        "address": "12 Health Avenue, Johannesburg, South Africa",
+        "phone": "+27 13 987 1234",
+        "website": "https://www.wellnessfirst.com",
+        "images": "images/RM.png",
+        "membershipLevel": 3,
+        "description": "shoes specializes in offering a wide variety of footwear for different purposes, styles, and occasions",
+        "industry": "Retail Store"
+    },
+    {
+        "name": "SMART SHOP",
+        "address": "345 Knowledge Lane, Johannesburg, South Africa",
+        "phone": "+27 14 567 8910",
+        "website": "https://www.edusphereacademy.com",
+        "images": "images/SMART SHOP.png",
+        "membershipLevel": 2,
+        "description": "sells both shoes and groceries is a unique hybrid establishment that caters to two essential consumer needs: footwear and food.",
+        "industry": "Retail Store"
+    },
+    {
+        "name": "quick bites",
+        "address": "678 Freight Boulevard, Johannesburg, South Africa",
+        "phone": "+27 15 234 5678",
+        "website": "https://www.skylinelogistics.com",
+        "images": "images/quick bites.png",
+        "membershipLevel": 1,
+        "description": "specializes in providing quick and convenient meals for customers, often focusing on affordability, efficiency, and consistency.",
+        "industry": "Foods"
+    },
+    {
+        "name": "snack shack",
+        "address": "901 Gourmet Street, Johannesburg, South Africa",
+        "phone": "+27 16 876 5432",
+        "website": "https://www.urbaneats.com",
+        "images": "images/snack shack.png",
+        "membershipLevel": 3,
+        "description": "Fast food restaurants often have a casual atmosphere, with self-service counters, drive-through options, or online ordering systems to enhance convenience.",
+        "industry": "Foods"
+    }
+]
+
+        

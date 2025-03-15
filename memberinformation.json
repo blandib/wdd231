@@ -1,0 +1,18 @@
+{
+    "family_name": "Mbaya",
+    "date_the_family_moved_into_the_ward": "2015/01/20",
+    "number_of_records": 3,
+    "visited_by_bishopric": true,
+    "individual_family_members": [
+        {
+            "name": "Blandine",
+            "gender": "F",
+            "birthday": "1996/12/15"
+        },
+        {
+            "name": "Yams",
+            "gender": "M",
+            "birthday": "1980/12/15"
+        }
+    ]
+}

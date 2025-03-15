@@ -1,0 +1,113 @@
+@media (max-width: 768px) {
+    .navigation {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navigation.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        margin: 10px 0;
+    }
+
+    .main-grid {
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .main-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+
+    .event, .current-weather, .forecast, .bus1 {
+        grid-column: span 1;
+    }
+
+    .social {
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+    .image {
+        width: 70px; 
+    }
+}
+
+@media (max-width: 320px) {
+    .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .header-content img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dark-mode-btn {
+        align-self: flex-end;
+    }
+
+    .main-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .social {
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+    .image {
+        width: 40px; 
+    }
+}
+/* Responsive styles for better display on smaller screens */
+@media (max-width: 600px) {
+    .main-grid {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+
+    .toggle-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+}
+@media (max-width: 768px) {
+    .dark-mode-btn {
+        display: block; /* Ensure the button is visible on smaller screens */
+        margin-left: auto; /* Keep it aligned to the right */
+    }
+}
+
+@media (max-width: 320px) {
+    .dark-mode-btn {
+        font-size: 20px; /* Adjust size for very small screens */
+    }
+}
