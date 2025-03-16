@@ -1,5 +1,4 @@
-/* styles.css */
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,58 +9,93 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: rgb(135, 207, 240); /* Light blue */
-    color: black;
+    background-color: #FAFAFF; 
     transition: background-color 0.3s, color 0.3s;
-}
-/* Dark Mode Button Styling */
-.dark-mode-btn {
-    display: block; /* Ensure the button is visible */
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: white; /* Ensure the icon is visible */
-    padding: 10px; /* Add padding for better clickability */
-    margin-left: 10px; /* Add spacing if needed */
+    color: #1E2749; 
 }
 
-.dark-mode-btn:hover {
-    opacity: 0.8; /* Add hover effect */
-}
-/* Header */
 /* Header Styles */
 .main-header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    position: relative; 
+    background-color: #273469; 
+    color: #FAFAFF; 
+    position: relative;
 }
 
-/* Dark Mode Button Positioning */
-.dark-mode-btn {
-    position: static; /* Ensure it stays in the header */
-    margin-left: auto; /* Push the button to the right */
+/* Header Titles (h1, h2, h3) */
+header h1, header h2, header h3 {
+    color: #FAFAFF; 
 }
+
+/* Dark Mode Button Styling */
+.dark-mode-btn {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #FAFAFF; 
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.dark-mode-btn:hover {
+    opacity: 0.8;
+}
+
 /* Dark Mode Styles */
 body.dark-mode {
-    background-color: #1a1a1a;
-    color: #38a6d1;
+    background-color: #1E2749; 
+    color: #E4D9FF; 
 }
 
-body.dark-mode-alt {
-    background-color: #2c3e50;
-    color: #2bbfe4;
+body.dark-mode .main-header {
+    background-color: #30343F; 
+    color: #FAFAFF;
 }
+
+body.dark-mode .nav-link {
+    color: #FAFAFF; 
+}
+
+body.dark-mode .nav-link:hover {
+    color: #E4D9FF; 
+}
+
+body.dark-mode .event,
+body.dark-mode .current-weather,
+body.dark-mode .forecast,
+body.dark-mode .container,
+body.dark-mode .member-card {
+    background-color: #273469; 
+    color: #E4D9FF; 
+    border-color: #E4D9FF; 
+}
+
+body.dark-mode h2 {
+    color: #E4D9FF;
+}
+
+body.dark-mode .toggle-buttons button {
+    background-color: #E4D9FF; 
+    color: #1E2749; 
+}
+
+body.dark-mode .toggle-buttons button:hover {
+    background-color: #FAFAFF; 
+    color: #1E2749; 
+}
+
 #darkModeToggle {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
     position: static !important;
 }
+
 .header-content {
     display: flex;
     align-items: center;
@@ -76,18 +110,33 @@ body.dark-mode-alt {
     height: auto;
 }
 
+.Chamber-name {
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 0.9;
+}
+
 /* Navigation Styles */
 .navigation ul {
     display: flex;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
 .nav-link {
-    color: white;
+    color: #FAFAFF; 
     text-decoration: none;
     margin: 0 15px;
+}
+
+.nav-link:hover {
+    color: #1E2749; 
+}
+
+.navigation:hover {
+    background-color: #273469; 
+    border-radius: 15px;
 }
 
 /* Buttons */
@@ -96,7 +145,7 @@ body.dark-mode-alt {
     display: none;
     background: none;
     border: none;
-    color: rgb(182, 31, 31);
+    color: #FAFAFF; 
     font-size: 24px;
     cursor: pointer;
 }
@@ -113,10 +162,11 @@ body.dark-mode-alt {
 .event,
 .current-weather,
 .forecast {
-    background-color: #dad3d3; /* Light grey */
-    border: 5px solid #080606;
+    background-color: #FAFAFF; 
+    border: 5px solid #273469; 
     padding: 20px;
     text-align: center;
+    color: #1E2749; 
 }
 
 /* Footer */
@@ -125,22 +175,24 @@ body.dark-mode-alt {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
-    color: white;
+    background-color: #30343F;
+    color: #FAFAFF; 
 }
 
 /* Container Card */
 .container {
-    background-color: #dad3d3;
+    background-color: #FAFAFF; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    color: #1E2749; 
 }
 
 /* Titles */
 h2 {
     margin-bottom: 20px;
+    color: #273469;
 }
 
 /* Weather Styles */
@@ -171,9 +223,10 @@ h2 {
 .day {
     margin: 10px;
     padding: 10px;
-    background-color: #fff;
+    background-color: #FAFAFF;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #1E2749; 
 }
 
 .day img {
@@ -183,19 +236,20 @@ h2 {
 
 /* Member Card Styles */
 .member-card {
-    border: 5px solid #080606;
+    border: 5px solid #273469; 
     border-radius: 8px;
     padding: 16px;
     margin-bottom: 16px;
-    background-color: #dad3d3;
+    background-color: #FAFAFF; 
     text-align: center;
+    color: #1E2749;
 }
 
 /* Grid View for Members */
 #members-container.grid-view {
-    display: grid; /* Use grid layout */
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 16px; /* Space between grid items */
+    grid-gap: 16px;
     padding: 10px;
 }
 
@@ -224,7 +278,7 @@ h2 {
 }
 
 #members-container.list-view .member-card .member-image {
-    display: none; /* Hide images in list view */
+    display: none;
 }
 
 /* Image Container for Hero Image */
@@ -251,8 +305,8 @@ h2 {
 
 .toggle-buttons button {
     padding: 10px 20px;
-    background-color: #0078D4;
-    color: white;
+    background-color: #273469; 
+    color: #FAFAFF; 
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -261,5 +315,5 @@ h2 {
 }
 
 .toggle-buttons button:hover {
-    background-color: #005A9E;
+    background-color: #1E2749;
 }

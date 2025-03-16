@@ -92,22 +92,10 @@
 /* Responsive styles for better display on smaller screens */
 @media (max-width: 600px) {
     .main-grid {
-        grid-template-columns: 1fr; /* Single column for smaller screens */
+        grid-template-columns: 1fr; 
     }
 
     .toggle-buttons {
-        flex-direction: column; /* Stack buttons vertically */
-    }
-}
-@media (max-width: 768px) {
-    .dark-mode-btn {
-        display: block; /* Ensure the button is visible on smaller screens */
-        margin-left: auto; /* Keep it aligned to the right */
-    }
-}
-
-@media (max-width: 320px) {
-    .dark-mode-btn {
-        font-size: 20px; /* Adjust size for very small screens */
+        flex-direction: column; 
     }
 }
