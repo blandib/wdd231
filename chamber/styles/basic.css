@@ -317,3 +317,374 @@ h2 {
 .toggle-buttons button:hover {
     background-color: #1E2749;
 }
+
+/* Home pages css*/
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile-first design */
+    gap: 20px; /* Spacing between sections */
+    padding: 20px;
+    background-color: #FAFAFF; /* Off-White */
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    text-align: center;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .cta {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #273469; /* Dark Blue */
+    color: #FAFAFF; /* Off-White */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Current Events Section */
+  .current-events {
+    background-color: #E4D9FF; /* Light Purple */
+    padding: 20px;
+    border-radius: 5px;
+    color: #1E2749;
+  }
+  
+  /* Weather Section */
+  .weather {
+    background-color: #FAFAFF; /* Off-White */
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid #273469; /* Dark Blue border */
+  }
+  
+  /* Company Spotlights Section */
+  .spotlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+  }
+  
+  .company {
+    background-color: #6767ee; /* Off-White */
+    padding: 20px;
+    border: 2px solid #E4D9FF; /* Dark Blue border */
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  /* Weather Section */
+  .weather {
+    background-color: #FAFAFF; /* Off-White */
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid #273469; /* Dark Blue border */
+  }
+  
+  .weather h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1E2749; /* Navy Blue */
+  }
+  
+  .forecast {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .day {
+    background-color: #FAFAFF; /* Off-White */
+    padding: 15px;
+    border: 2px solid #273469; /* Dark Blue border */
+    border-radius: 10px;
+  }
+  
+  .day img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .day p {
+    margin: 5px 0;
+    color: #1E2749; /* Navy Blue */
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 750px; /* Adjust height as needed */
+    overflow: hidden;
+  }
+  
+  /* Slider Container */
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Individual Slides */
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area */
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  /* Hero Text Overlay */
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FAFAFF; /* Off-White */
+    background-color: rgba(48, 52, 63, 0.7); /* Dark Blue-Gray with transparency */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+  }
+  
+  .cta {
+    background-color: #273469; /* Dark Blue */
+    color: #FAFAFF; /* Off-White */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Events Section */
+  .events {
+    padding: 20px;
+    background-color: #E4D9FF; /* Light Purple */
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  .events h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1E2749; /* Navy Blue */
+  }
+  
+  /* Calendar Container */
+  .calendar {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #FAFAFF; /* Off-White */
+    border: 5px solid #273469; /* Dark Blue border */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Calendar Header */
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .calendar-header button {
+    background-color: #273469; /* Dark Blue */
+    color: #FAFAFF; /* Off-White */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .calendar-header button:hover {
+    background-color: #1E2749; /* Navy Blue */
+  }
+  
+  .calendar-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #1E2749; /* Navy Blue */
+  }
+  #events {
+    color: #1E2749;
+    font-size: 2.5rem;
+  }
+  #weather {
+    color: #1E2749;
+    font-size: 2.5rem;
+  }
+  #current-weather {
+    color: #E4D9FF;
+    font-size: 1.5rem;
+  }
+  /* Calendar Grid */
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 days in a week */
+    gap: 10px;
+  }
+  
+  .calendar-grid div {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #E4D9FF; /* Light Purple */
+    color: #1E2749; /* Navy Blue */
+  }
+  
+  .calendar-grid div.event-day {
+    background-color: #273469; /* Dark Blue */
+    color: #FAFAFF; /* Off-White */
+    font-weight: bold;
+  }
+  
+  /* Weather Section */
+  .weather {
+    background-color: #FAFAFF; /* Off-White */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  .weather h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1E2749; /* Navy Blue */
+  }
+  
+  .current-weather, .forecast {
+    background-color: #FAFAFF; /* Off-White */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .current-weather h3, .forecast h3 {
+    margin-top: 0;
+    color: #1E2749; /* Navy Blue */
+  }
+  
+  .weather-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .weather-info img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  #forecast-days {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 150px)); /* Responsive grid */
+    gap: 20px;
+    color: #E4D9FF; /* Navy Blue */
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Add some spacing below the heading */
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .forecast-days {
+    color: #1E2749;
+    font-size: 2.5rem;
+  }
+  
+  .spotlights {
+    width: 100%; /* Ensure the section takes full width */
+    padding: 20px; /* Optional: Add padding around the section */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+#spotlight-cards {
+    white-space: nowrap; /* Prevent wrapping of cards */
+    overflow-x: auto; /* Add horizontal scrollbar if content overflows */
+    padding-bottom: 10px; /* Optional: Add space for scrollbar */
+}
+
+.spotlight-card {
+    display: inline-block; /* Display cards in a horizontal line */
+    width: 400px; /* Set a fixed width for each card */
+    height: auto; /* Allow height to adjust based on content */
+    margin-right: 15px; /* Add spacing between cards */
+    background-color: #1E2749; /* Light background color */
+    border: 5px solid #1E2749; /* Optional: Add a border */
+    border-radius: 8px; /* Optional: Rounded corners */
+    padding: 15px; /* Add padding inside cards */
+    box-sizing: border-box; /* Ensure padding is included in width */
+    vertical-align: top; /* Align cards to the top */
+    text-align: center; /* Center content inside cards */
+}
+
+.spotlight-card img {
+    max-width: 100%; /* Ensure images fit within the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners for images */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.spotlight-card h3 {
+    margin: 10px 0; /* Spacing around the heading */
+    font-size: 1.2em; /* Larger font size for the name */
+}
+
+.spotlight-card p {
+    margin: 5px 0; /* Spacing between paragraphs */
+    font-size: 0.9em; /* Smaller font size for details */
+}
+
+.spotlight-card a {
+    color: #0073e6; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.spotlight-card a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Optional: Remove margin for the last card */
+.spotlight-card:last-child {
+    margin-right: 0;
+}
+#spotlight-cards {
+  white-space: nowrap;
+  overflow: hidden; /* Hide overflow (no scrollbar) */
+}
+.Company {
+  color: #FAFAFF;
+}

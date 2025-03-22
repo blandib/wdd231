@@ -99,3 +99,43 @@
         flex-direction: column; 
     }
 }
+/* home pages css*/
+ /* Media Query for Larger Screens */
+ @media (min-width: 768px) {
+    .container {
+      grid-template-columns: 2fr 1fr; /* Two columns for larger screens */
+      grid-template-areas:
+        "hero hero"
+        "current-events weather"
+        "spotlights spotlights";
+    }
+  
+    .hero {
+      grid-area: hero;
+    }
+  
+    .current-events {
+      grid-area: current-events;
+    }
+  
+    .weather {
+      grid-area: weather;
+    }
+  
+    .spotlights {
+      grid-area: spotlights;
+    }
+  }
+ 
+  @media (max-width: 768px) {
+      .spotlight-card {
+          flex: 1 1 100%; /* Full width on smaller screens */
+          max-width: 100%; /* Ensure cards take full width */
+          margin-right: 0; /* Remove margin between cards */
+      }
+  
+      #spotlight-cards {
+          flex-direction: column; /* Stack cards vertically */
+          align-items: center; /* Center cards horizontally */
+      }
+  }
