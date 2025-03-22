@@ -70,8 +70,8 @@ body.dark-mode .current-weather,
 body.dark-mode .forecast,
 body.dark-mode .container,
 body.dark-mode .member-card {
-    background-color: #273469; 
-    color: #E4D9FF; 
+    background-color: #30343F; 
+    color: #6767ee; 
     border-color: #E4D9FF; 
 }
 
@@ -145,7 +145,7 @@ body.dark-mode .toggle-buttons button:hover {
     display: none;
     background: none;
     border: none;
-    color: #FAFAFF; 
+    color: #0073e6; 
     font-size: 24px;
     cursor: pointer;
 }
