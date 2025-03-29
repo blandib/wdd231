@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Thank You</title>
+<meta name="description" content= "The Chamber is an independent, non-political, subscription-based association dedicated to promoting a business-friendly environment. Our members are drawn from every sector of the economy, and range from independent entrepreneurs to the large corporate.Explore the Valley Hill Chamber of Commerce directory, connecting businesses and fostering growth in the local community.">
+<meta name="author" content="Blandine Bukasa Lusamba">
+
+<meta property="og:title" content="WDD231 Projects">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://cdn.britannica.com/41/75841-050-FAAE44F0/Table-Mountain-Cape-Town-Western-Bay-South.jpg">
+
+<meta property="og:url" content="https://blandib.github.io/wdd231/chamber/directory.html">
+<meta property="og:image" content="https://blandib.github.io/wdd231/images/blan.webp" >
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@blandinebukasa2">
+<meta name="twitter:title" content="WDD231 Projects">
+<meta name="twitter:description" content=" Web Frontend Development. This course builds on your prior experience with the core technologies of web design and development including HTML, CSS, JavaScript, and design. The course focuses on user experience, accessibility, compliance, performance optimization, and basic API use. It is anticipated that students who complete this course will have very firm grasp of the core web technologies of HTML, CSS, and JavaScript and be ready for the next sequence of application courses.">
+<meta name="twitter:image" content="https://cdn.britannica.com/41/75841-050-FAAE44F0/Table-Mountain-Cape-Town-Western-Bay-South.jpg">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon(1).ico">
+<link rel="stylesheet" href="styles/normaliztion.css">
+<link rel="stylesheet" href="styles/basic.css">
+<link rel="stylesheet" href="styles/smaller.css">
+
+</head>
+<body id="homePage">
+    <script src="scripts/darkmode.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+    <script src="scripts/modals.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+   
+  
+
+<header class="main-header">
+  
+
+    <span class="header-content">
+        <img class="image" src="images/valleyhilllogo.png" alt="logo">
+    </span>
+    <h1>Thank You</h1>
+    <!-- Hamburger Menu Button -->
+        <button class="hamburger" aria-label="Toggle navigation">
+            <span class="hamburger-icon">=</span>
+        </button>
+        <!-- Navigation -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="directory.html" class="nav-link">Director</a></li>
+                <li><a href="join.html" class="nav-link">Join</a></li>
+                <li><a href="#" class="nav-link">Discover</a></li>
+            </ul>
+        </nav>
+        <button id="darkModeToggle" class="dark-mode-btn" aria-label="Toggle dark mode">🔆</button>
+
+</header>
+<main>
+    <div id="container">
+        <h1>Thank You for Your Application!</h1>
+        <p>We appreciate you taking the time to complete our membership application form. Your information has been received and we'll process it shortly.</p>
+        
+        <div class="confirmation-details">
+            <h2>Your Application Details</h2>
+            
+            <div class="detail-row">
+                <div class="detail-label">First Name:</div>
+                <div class="detail-value" id="display-firstname"></div>
+            </div>
+            
+            <div class="detail-row">
+                <div class="detail-label">Last Name:</div>
+                <div class="detail-value" id="display-lastname"></div>
+            </div>
+            
+            <div class="detail-row">
+                <div class="detail-label">Email:</div>
+                <div class="detail-value" id="display-email"></div>
+            </div>
+            
+            <div class="detail-row">
+                <div class="detail-label">Mobile Phone:</div>
+                <div class="detail-value" id="display-phone"></div>
+            </div>
+            
+            <div class="detail-row">
+                <div class="detail-label">Business/Organization:</div>
+                <div class="detail-value" id="display-organization"></div>
+            </div>
+            
+            <div class="detail-row">
+                <div class="detail-label">Membership Level:</div>
+                <div class="detail-value" id="display-membership"></div>
+            </div>
+            
+            <div class="detail-row">
+                <div class="detail-label">Application Submitted:</div>
+                <div class="detail-value" id="display-timestamp"></div>
+            </div>
+        </div>
+        
+        <p style="margin-top: 30px;">A confirmation email has been sent to the address you provided. If you have any questions, please don't hesitate to contact us.</p>
+    </div>
+
+</main>
+<footer class="main-footer">
+    <section>
+        <h4>Valley Hill Chamber Of Commerce</h4>
+        <p>234 9Avenue</p>
+        <p>Valley Hill, Mail 3333</p>
+        <p>@infoValley.org</p>
+        <p>(555)9995666</p>
+    </section>
+    <div class="social">
+        <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="fb icon" loading="lazy">
+        </a>
+        <a href="https://twitter.com" target="_blank" >
+            <img src="images/x.png" alt="X icon" loading="lazy">
+        </a>
+    </div>    
+    <div>
+        <p>WDD231 Class Project</p>
+        <p>Blandine Bukasa</p>
+    
+    <p>&copy;<span id="year"></span> by Blandine Bukasa Lusamba | Valley Hill Chamber Of Commerce </p>
+    <p id="lastModified">Last Update: </p>
+</div>
+</footer>
+</body>
+</html>
+

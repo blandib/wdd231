@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Membership Application</title>
+<meta name="description" content= "The Chamber is an independent, non-political, subscription-based association dedicated to promoting a business-friendly environment. Our members are drawn from every sector of the economy, and range from independent entrepreneurs to the large corporate.Explore the Valley Hill Chamber of Commerce directory, connecting businesses and fostering growth in the local community.">
+<meta name="author" content="Blandine Bukasa Lusamba">
+
+<meta property="og:title" content="WDD231 Projects">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://cdn.britannica.com/41/75841-050-FAAE44F0/Table-Mountain-Cape-Town-Western-Bay-South.jpg">
+
+<meta property="og:url" content="https://blandib.github.io/wdd231/chamber/directory.html">
+<meta property="og:image" content="https://blandib.github.io/wdd231/images/blan.webp" >
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@blandinebukasa2">
+<meta name="twitter:title" content="WDD231 Projects">
+<meta name="twitter:description" content=" Web Frontend Development. This course builds on your prior experience with the core technologies of web design and development including HTML, CSS, JavaScript, and design. The course focuses on user experience, accessibility, compliance, performance optimization, and basic API use. It is anticipated that students who complete this course will have very firm grasp of the core web technologies of HTML, CSS, and JavaScript and be ready for the next sequence of application courses.">
+<meta name="twitter:image" content="https://cdn.britannica.com/41/75841-050-FAAE44F0/Table-Mountain-Cape-Town-Western-Bay-South.jpg">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon(1).ico">
+<link rel="stylesheet" href="styles/normaliztion.css">
+<link rel="stylesheet" href="styles/basic.css">
+<link rel="stylesheet" href="styles/smaller.css">
+
+</head>
+<body id="homePage">
+    <script src="scripts/darkmode.js" defer></script>
+    <script src="scripts/modals.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+   
+  
+
+<header class="main-header">
+  
+
+    <span class="header-content">
+        <img class="image" src="images/valleyhilllogo.png" alt="logo">
+    </span>
+    <h1>Membership Application</h1>
+
+
+
+    <!-- Hamburger Menu Button -->
+        <button class="hamburger" aria-label="Toggle navigation">
+            <span class="hamburger-icon">=</span>
+        </button>
+        <!-- Navigation -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="directory.html" class="nav-link">Director</a></li>
+                <li><a href="join.html" class="nav-link">Join</a></li>
+                <li><a href="#" class="nav-link">Discover</a></li>
+            </ul>
+        </nav>
+        <button id="darkModeToggle" class="dark-mode-btn" aria-label="Toggle dark mode">🔆</button>
+
+</header>
+<main>
+    <div class="container">
+        <div class="form-container">
+           <h2>Membership Application</h2>
+            <form method="get" action="thankyou.html">
+                <label for="firstname" class="name-label">
+                    <span>First Name:</span>
+                    <input type="text" id="firstname" name="firstname" required title="Please enter your first name" autocomplete="given-name" class="name-input">
+                </label>
+                <label for="lastname" class="name-label"></label>
+                    <span>Last Name:</span>
+                    <input type="text" name="lastname" required title="Please enter your last name" autocomplete="family-name">
+                </label>
+                
+                <label>
+                    <span>Organizational Title:</span>
+                    
+                    <input type="text" name="title" title="Your position in the organization" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" placeholder= "Must be at least 7 characters (letters, spaces, or hyphens only)">
+                   
+                </label>
+                
+                <label>
+                    <span>Email:</span>
+                    <input type="email" name="email" required title="Please enter a valid email address" autocomplete="email" placeholder="example@domain.com">
+                </label>
+                
+                <label>
+                    <span>Mobile Phone:</span>
+                    <input type="tel" name="phone" required title="Please enter your mobile phone number" autocomplete="tel">
+                </label>
+                
+                <label>
+                    <span>Business/Organization Name:</span>
+                    <input type="text" name="organization" required title="Please enter your organization name" autocomplete="organization">
+                </label>
+                
+                <label>
+                    <span>Membership Level:</span>
+                    <select name="membership" required title="Please select a membership level">
+                        <option value="">-- Select a Membership Level --</option>
+                        <option value="NP">NP Membership (Non-Profit - No Fee)</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                </label>
+                
+                <label>
+                    <span>Business/Organization Description:</span>
+                    <textarea name="description" title="Tell us about your organization" rows="4"></textarea>
+                </label>
+                
+                <input type="hidden" name="timestamp" id="timestamp">
+                
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+        
+        <div class="cards-container">
+            <div class="card" style="--order: 1;">
+                <h3>NP Membership</h3>
+                <p>For non-profit organizations with no fee.</p>
+                <a href="#npModal" class="modal-link">Learn More</a>
+            </div>
+            
+            <div class="card" style="--order: 2;">
+                <h3>Bronze Membership</h3>
+                <p>Basic membership with essential benefits.</p>
+                <a href="#bronzeModal" class="modal-link">Learn More</a>
+            </div>
+            
+            <div class="card" style="--order: 3;">
+                <h3>Silver Membership</h3>
+                <p>Enhanced benefits for growing organizations.</p>
+                <a href="#silverModal" class="modal-link">Learn More</a>
+            </div>
+            
+            <div class="card" style="--order: 4;">
+                <h3>Gold Membership</h3>
+                <p>Premium benefits for maximum exposure.</p>
+                <a href="#goldModal" class="modal-link">Learn More</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modals -->
+    <div id="npModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>NP Membership Benefits</h2>
+            <ul>
+                <li>Free membership for registered non-profits</li>
+                <li>Listing in our member directory</li>
+                <li>Access to basic member resources</li>
+                <li>Monthly newsletter</li>
+                <li>Invitation to annual non-profit networking event</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="bronzeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Bronze Membership Benefits</h2>
+            <ul>
+                <li>All NP benefits plus:</li>
+                <li>Annual fee: $250</li>
+                <li>10% discount on all events</li>
+                <li>Access to member-only webinars</li>
+                <li>Quarterly training sessions</li>
+                <li>Basic listing in our business spotlight</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="silverModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Silver Membership Benefits</h2>
+            <ul>
+                <li>All Bronze benefits plus:</li>
+                <li>Annual fee: $500</li>
+                <li>20% discount on all events</li>
+                <li>Priority registration for training sessions</li>
+                <li>Featured listing in our business spotlight</li>
+                <li>Two free event tickets per year</li>
+                <li>Access to exclusive networking events</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="goldModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Gold Membership Benefits</h2>
+            <ul>
+                <li>All Silver benefits plus:</li>
+                <li>Annual fee: $1,000</li>
+                <li>30% discount on all events</li>
+                <li>VIP access to all training and events</li>
+                <li>Premium featured listing on our homepage</li>
+                <li>Four free event tickets per year</li>
+                <li>Exclusive invitation to annual gala</li>
+                <li>Dedicated account manager</li>
+            </ul>
+        </div>
+    </div>
+    
+</main>
+
+<footer class="main-footer">
+    <section>
+        <h4>Valley Hill Chamber Of Commerce</h4>
+        <p>234 9Avenue</p>
+        <p>Valley Hill, Mail 3333</p>
+        <p>@infoValley.org</p>
+        <p>(555)9995666</p>
+    </section>
+    <div class="social">
+        <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="fb icon" loading="lazy">
+        </a>
+        <a href="https://twitter.com" target="_blank" >
+            <img src="images/x.png" alt="X icon" loading="lazy">
+        </a>
+    </div>    
+    <div>
+        <p>WDD231 Class Project</p>
+        <p>Blandine Bukasa</p>
+    
+    <p>&copy;<span id="year"></span> by Blandine Bukasa Lusamba | Valley Hill Chamber Of Commerce </p>
+    <p id="lastModified">Last Update: </p>
+</div>
+</footer>
+</body>
+</html>
+
