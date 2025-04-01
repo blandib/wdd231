@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+/* Color Schema */
+body {
+    background-color: #051622; /* Light background */
+    color: #1ba098; /* Text color */
+    font-family: Lato,Merriweather; /* Default typography */
+}
+header, footer {
+    background-color: #051622; /* Accent color */
+    color: #deb992; /* Font color for headings */
+    text-align: center;
+    padding: 1rem;
+}
+h1, h2 {
+    font-family: Lato, Merriweather; /* Typography for headings */
+}
+section {
+    margin: 20px;
+    padding: 15px;
+    background-color: #051622;
+    border: 1px solid #ddd;
+}
