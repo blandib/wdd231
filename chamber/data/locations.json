@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Apartheid Museum",
-    "image": "images/apartheid-museum(1).webp",
+    "image": "images/apartheid-museum.webp",
     "address": "Northern Parkway & Gold Reef Rd, Johannesburg",
     "description": "A museum dedicated to showcasing South Africa's apartheid history and journey toward democracy.",
     "details": "The Apartheid Museum opened in 2001 and is acknowledged as the pre-eminent museum in the world dealing with 20th century South Africa. It uses film, text, audio and live accounts to provide a chilling insight into the architecture and implementation of the apartheid system."
@@ -18,14 +18,14 @@
   {
     "id": 3,
     "title": "Cradle of Humankind",
-    "image": "images/Cradleofhumankind.webp",
+    "image": "images/cradle-of-humankind.webp",
     "address": "Mogale City",
     "description": "Explore ancient caves and learn about human origins at this UNESCO World Heritage Site.",
     "details": "This paleoanthropological site about 50 km northwest of Johannesburg contains a complex of limestone caves where scientists have discovered more than 1,000 hominid fossils, including the famous 'Mrs Ples' and 'Little Foot' skeletons dating back millions of years."
   },
   {
     "id": 4,
-    "title": "Dinokeng Game Reserve",
+    "title": "images/dinokeng game reserve.webp",
     "image": "images/dinokeng-game-reserve.webp",
     "address": "Hammanskraal, 0400",
     "description": "Excellent for wildlife enthusiasts and promoting eco-tourism.",
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "title": "Sterkfontein Caves",
-    "image": "images/sterkfontein-caves.webp",
+    "image": "images/sterkfontien-caves.webp",
     "address": "4 Kromdraai Road, Mogale City",
     "description": "Part of the Cradle of Humankind, these caves are home to some of the world's oldest hominid fossils.",
     "details": "The Sterkfontein Caves have yielded more Australopithecus fossils than any other site in the world, including the famous 'Mrs Ples' skull. The underground tour takes visitors through spectacular cave formations while explaining the significance of the fossil finds."
@@ -50,7 +50,7 @@
   {
     "id": 7,
     "title": "Voortrekker Monument",
-    "image": "images/voortrekkermonument.webp",
+    "image": "images/voortrekker.jpeg",
     "address": "Eeufees Rd, Groenkloof 358-Jr, Pretoria, 0027",
     "description": "Highlights historical and architectural significance.",
     "details": "This massive granite structure commemorates the Voortrekkers who left the Cape Colony between 1835 and 1854. The monument features a historical frieze, museum exhibits, and offers panoramic views of Pretoria from its top level."
@@ -58,7 +58,7 @@
   {
     "id": 8,
     "title": "",
-    "image": "images/walter-sisulu-botanical-gardens.webp",
+    "image": "images/walter-sisulu-botanical.webp",
     "address": "Malcolm Rd, Poortview, Roodepoort, 1724",
     "description": "A tranquil spot for nature lovers, with beautiful waterfalls and rich birdlife.",
     "details": "This 300-hectare garden features indigenous plants, a spectacular waterfall, and is home to a pair of Verreaux's eagles that nest on the cliffs. The gardens offer walking trails, picnic spots, and excellent birdwatching opportunities with over 220 bird species recorded."
