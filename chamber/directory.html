@@ -22,8 +22,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="icon" href="favicon(1).ico">
 <link rel="stylesheet" href="styles/normaliztion.css">
-<link rel="stylesheet" href="styles/basic.css">
-<link rel="stylesheet" href="styles/smaller.css">
+<link rel="stylesheet" href="styles/basic_directory.css">
+<link rel="stylesheet" href="styles/directory_smaller.css">
 <body id="homePage">
    
     <script src="scripts/darkmode.js" defer></script>
@@ -33,34 +33,28 @@
     <script src="scripts/calender.js" defer></script>
   
 
-<header class="main-header">
-  
-
-    <span class="header-content">
-        <img class="image" src="images/valleyhilllogo.png" alt="logo">
-    </span>
-    <h1 >Directory</h1>
-
-
-
-    <header>
-        <!-- Other header content -->
-        <button class="hamburger" aria-label="Menu">
-            ☰
-        </button>
+    <header class="main-header">
+        <div class="header-content">
+            <img class="logo" src="images/valleyhilllogo.png" alt="Valley Hill Chamber Logo">
+            <div class="header-titles">
+                <h1>Valley Hill</h1>
+                <h2>National Assembly</h2>
+            </div>
+        </div>
+    
+        <button class="hamburger" aria-label="Menu">☰</button>
+        
         <nav class="navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="#">Discover</a></li>
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="directory.html" class="nav-link">Directory</a></li>
+                <li><a href="join.html" class="nav-link">Join</a></li>
+                <li><a href="discover.html" class="nav-link">Discover</a></li>
             </ul>
         </nav>
-        <button id="darkModeToggle" class="dark-mode-btn">🔆</button>
+    
+        <button id="darkModeToggle" class="dark-mode-btn" aria-label="Toggle dark mode">🌓</button>
     </header>
-</header>
-
-
     <main>
        <section class="hero">
         <div class="image-container">

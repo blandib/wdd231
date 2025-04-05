@@ -23,7 +23,8 @@
 <link rel="icon" href="favicon(1).ico">
 <link rel="stylesheet" href="styles/normaliztion.css">
 <link rel="stylesheet" href="styles/basic.css">
-<link rel="stylesheet" href="styles/smaller.css">
+<link rel="stylesheet" href="styles/basic_index.css">
+
 
 </head>
 <body id="homePage">
@@ -57,7 +58,7 @@
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="directory.html" class="nav-link">Director</a></li>
                 <li><a href="join.html" class="nav-link">Join</a></li>
-                <li><a href="#" class="nav-link">Discover</a></li>
+                <li><a href="discover.html" class="nav-link">Discover</a></li>
             </ul>
         </nav>
         <button id="darkModeToggle" class="dark-mode-btn" aria-label="Toggle dark mode">🔆</button>
@@ -96,40 +97,42 @@
                 </div>
               </section>
           
-            <!-- Current Events Section -->
-            <section class="events">
-                <h2 id="events">Upcoming Events</h2>
-                <div class="calendar">
-                  <div class="calendar-header">
-                    <button id="prev-month">&lt;</button>
-                    <h3 id="current-month">Month Year</h3>
-                    <button id="next-month">&gt;</button>
-                  </div>
-                  <div class="calendar-grid" id="calendar-grid">
-                    <!-- Calendar days will be dynamically generated here -->
+              <div class="events-container">
+                <!-- Events Column -->
+                <div class="events-column">
+                  <h2>Upcoming Events</h2>
+                  <div class="calendar">
+                    <div class="calendar-header">
+                      <button id="prev-month">&lt;</button>
+                      <h3 id="current-month">April 2025</h3>
+                      <button id="next-month">&gt;</button>
+                    </div>
+                    <div class="calendar-grid" id="calendar-grid">
+                      <!-- Calendar days will be dynamically generated here -->
+                    </div>
                   </div>
                 </div>
-              </section>
-          
-            <!-- Weather Section -->
-            <section class="weather">
-                <h2 id="weather">Weather Forecast</h2>
-                <div class="current-weather">
-                  <h3 id="current-weather">Current Weather</h3>
+              
+                <!-- Current Weather Column -->
+                <div class="current-weather-column">
+                  <h2>Current Weather</h2>
                   <div class="weather-info">
                     <img id="current-icon" src="" alt="Weather Icon">
-                    <p><strong class="temp">Temperature:</strong> <span id="current-temp">Loading...</span></p>
-                    <p><strong class="condi">Condition:</strong> <span id="current-condition">Loading...</span></p>
+                    <p><strong>Temperature:</strong> <span id="current-temp">Loading...</span></p>
+                    <p><strong>Condition:</strong> <span id="current-condition">Loading...</span></p>
                   </div>
                 </div>
-                <div><h3 class="forecast-days">3-Day Forecast</h3></div>
-                <div class="forecast">
+              
+                <!-- Forecast Column -->
+                <div class="forecast-column">
+                  <h2>3-Day Forecast</h2>
                   <div id="forecast-days">
                     <!-- Forecast data will be dynamically inserted here -->
-                  </div>  
+                  </div>
                 </div>
-               
-              </section>
+              </div>
+          
+           
               <section class="spotlights">  
                <div>   
                 <div><h2>Discover Our Members</h2></div>      

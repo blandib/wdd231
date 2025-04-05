@@ -1,0 +1,163 @@
+@media (min-width: 40.0625rem) and (max-width: 64rem) {
+    .card-container {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 1fr;
+    }
+  
+    .card {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: 300px 1fr; /* First column = image width (300px) */
+      grid-template-areas:
+        "name name"
+        "img description"
+        "img address"
+        ". button";
+      align-items: start; /* Prevents vertical stretching */
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 16px;
+      background: #fff;
+      transition: all 0.3s ease; /* Smooth transitions for hover effects */
+    }
+  
+    .card h2 {
+      grid-area: name;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  
+    .card figure {
+      grid-area: img;
+      margin: 0;
+      width: 100%; /* Ensures image respects grid column */
+    }
+  
+    .card figure img {
+      width: 100%; /* Fills the 300px column */
+      height: 200px;
+      object-fit: cover; /* Prevents distortion */
+      border-radius: 4px;
+      border: 2px solid #0056b3;
+    }
+  
+    .card p {
+      grid-area: description;
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  
+    .card address {
+      grid-area: address;
+      font-style: normal;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  
+    .card button {
+      grid-area: button;
+      justify-self: center;
+      padding: 8px 16px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    .card button:hover {
+      background: #0056b3;
+    }
+  
+    .discover {
+      padding: 30px;
+    }
+  
+    .sidebar-content {
+      width: 200px;
+      font-size: 0.9rem;
+    }
+    /* ===== Animations ===== */
+/* Fade-in animation when page loads */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .card {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+  
+  /* Staggered delay for each card */
+  .card:nth-child(1) { animation-delay: 0.1s; }
+  .card:nth-child(2) { animation-delay: 0.2s; }
+  .card:nth-child(3) { animation-delay: 0.3s; }
+  .card:nth-child(4) { animation-delay: 0.4s; }
+  .card:nth-child(5) { animation-delay: 0.5s; }
+  .card:nth-child(6) { animation-delay: 0.6s; }
+  .card:nth-child(7) { animation-delay: 0.7s; }
+  .card:nth-child(8) { animation-delay: 0.8s; }
+  
+  /* Hover Effects */
+  .card:hover {
+    transform: translateY(-5px); /* Lift card slightly */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+  }
+  
+  .card figure img {
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover figure img {
+    transform: scale(1.02); /* Slight zoom on image */
+  }
+  
+  .card button {
+    transition: all 0.3s ease;
+  }
+  
+  .card button:hover {
+    transform: translateY(-2px); /* Lift button */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); /* Glow effect */
+  }
+  .sidebar-content {
+    border-left: none;
+    border-top: 3px solid #007bff;
+    margin: 30px 0;
+    padding: 15px;
+}
+
+.sidebar-message {
+    font-size: 0.9rem;
+}
+}
+
+/* Interactive Effects */
+.sidebar-content:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0, 123, 255, 0.1);
+background-color: #fff;
+}
+
+/* Dynamic Message Styling */
+.sidebar-message.highlight {
+background-color: #e7f1ff;
+border-left: 3px solid #0056b3;
+padding: 15px;
+border-radius: 4px;
+}
+
+.sidebar-message.warning {
+color: #856404;
+background-color: #fff3cd;
+border-left: 3px solid #ffc107;
+}
+
+.sidebar-message.success {
+color: #155724;
+background-color: #d4edda;
+border-left: 3px solid #28a745;
+}
+  

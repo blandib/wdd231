@@ -1,10 +1,14 @@
+/* Mobile First Approach - 320px and up */
 @media (max-width: 768px) {
+    /* Navigation */
     .navigation {
         display: none;
+        width: 100%;
     }
 
     .hamburger {
         display: block;
+        cursor: pointer;
     }
 
     .navigation.active {
@@ -14,37 +18,42 @@
 
     .navigation ul {
         flex-direction: column;
+        padding: 0;
     }
 
     .nav-link {
         margin: 10px 0;
+        text-align: center;
     }
 
+    /* Grid Layout */
     .main-grid {
-        grid-template-columns: 2fr 1fr 1fr;
-        grid-template-rows: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
-
-    .main-footer {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
 
     .event, .current-weather, .forecast, .bus1 {
         grid-column: span 1;
+    }
+
+    /* Footer */
+    .main-footer {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .social {
         justify-content: flex-start;
         margin-top: 10px;
     }
-    .image {
-        width: 70px; 
-    }
-}
 
-@media (max-width: 320px) {
+    /* Images */
+    .image {
+        width: 70px;
+    }
+
+    /* Header */
     .main-header {
         flex-direction: column;
         align-items: flex-start;
@@ -61,13 +70,98 @@
         margin-bottom: 10px;
     }
 
-    .navigation ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
+    /* Dark Mode */
     .dark-mode-btn {
         align-self: flex-end;
+    }
+
+    /* Spotlight Cards */
+    .spotlight-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    #spotlight-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Discover Page */
+    .card-container {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        padding: 30px;
+    }
+
+    .card {
+        display: grid;
+        gap: 18px;
+        grid-template-areas:
+            "name"
+            "img"
+            "description"
+            "address"
+            "button";
+        border: 1px solid #007bff;
+        border-radius: 20px;
+        padding: 16px;
+        background: #fff;
+        width: 100%;
+        margin: 10px auto;
+        transition: all 0.3s ease;
+    }
+
+    .card figure img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Form Elements */
+    .form-container {
+        width: 100%;
+        min-width: unset;
+    }
+
+    label {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    input, select, textarea {
+        width: 100%;
+    }
+
+    /* General Layout */
+    body {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container, #members-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .member {
+        width: 100%;
+    }
+}
+
+/* Extra Small Screens - 320px and below */
+@media (max-width: 320px) {
+    .image {
+        width: 40px;
     }
 
     .main-grid {
@@ -76,114 +170,80 @@
     }
 
     .main-footer {
-        flex-direction: column;
-        align-items: flex-start;
         text-align: left;
     }
-
-    .social {
-        justify-content: flex-start;
-        margin-top: 10px;
-    }
-    .image {
-        width: 40px; 
-    }
 }
-/* Responsive styles for better display on smaller screens */
+
+/* Tablet Layout - 600px and below */
 @media (max-width: 600px) {
-    .main-grid {
-        grid-template-columns: 1fr; 
-    }
-
     .toggle-buttons {
-        flex-direction: column; 
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
     }
 }
-/* home pages css*/
- /* Media Query for Larger Screens */
- @media (min-width: 768px) {
+
+/* Desktop Layout - 768px and above */
+@media (min-width: 768px) {
     .container {
-      grid-template-columns: 2fr 1fr; 
-      grid-template-areas:
-        "hero hero"
-        "current-events weather"
-        "spotlights spotlights";
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "hero hero"
+            "current-events weather"
+            "spotlights spotlights";
     }
-  
+
     .hero {
-      grid-area: hero;
+        grid-area: hero;
     }
-  
+
     .current-events {
-      grid-area: current-events;
+        grid-area: current-events;
     }
-  
+
     .weather {
-      grid-area: weather;
+        grid-area: weather;
     }
-  
+
     .spotlights {
-      grid-area: spotlights;
+        grid-area: spotlights;
     }
-  }
- 
-  @media (max-width: 768px) {
-      .spotlight-card {
-          flex: 1 1 100%; 
-          max-width: 100%;
-          margin-right: 0; 
-      }
-  
-      #spotlight-cards {
-          flex-direction: column; 
-          align-items: center;
-      }
-  }
-  
-@media (max-width: 768px) {
-  body {
-    flex-direction: column;
-    align-items: stretch; 
-  }
-
-  .grid-container, #members-container {
-    grid-template-columns: 1fr; 
-    gap: 20px; 
-  }
-  .container {
-    flex-direction: column; 
-    align-items: center; 
-  }
-
-  .form-container {
-    width: 100%; 
-    min-width: unset; 
-  }
-
-  label {
-    flex-direction: column; 
-    width: 100%;
-  }
-
-  input, select, textarea {
-    width: 100%; 
-  }
-
-  .cards-container {
-    width: 100%; 
-  }
 }
-  .events, .weather-container, .hero {
-    width: 100%; 
-    margin: 0 auto;
-  }
 
-  .toggle-buttons {
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-  }
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 
-  .member {
-    width: 100%; 
-  }
+.card {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Staggered animation delays */
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+.card:nth-child(6) { animation-delay: 0.6s; }
+.card:nth-child(7) { animation-delay: 0.7s; }
+.card:nth-child(8) { animation-delay: 0.8s; }
+
+/* Hover Effects */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card figure img {
+    transition: transform 0.3s ease;
+}
+
+.card:hover figure img {
+    transform: scale(1.02);
+}
+
+.card button {
+    transition: all 0.3s ease;
+}

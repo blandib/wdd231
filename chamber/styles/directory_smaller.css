@@ -1,0 +1,123 @@
+/* ===== 320px MOBILE LAYOUT ===== */
+@media (max-width: 320px) {
+    /* Base Reset */
+    body {
+      width: 100%;
+      overflow-x: hidden;
+    }
+  
+    /* Header Stack */
+    .main-header {
+      flex-direction: column;
+      padding: 10px;
+      gap: 10px;
+    }
+  
+    /* Logo and Titles */
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      order: 1;
+    }
+  
+    .header-titles {
+      text-align: left;
+      flex-grow: 1;
+      padding-left: 10px;
+    }
+  
+    /* Hamburger Menu */
+    .hamburger {
+      display: block;
+      order: 2;
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+  
+    /* Navigation - Hidden by Default */
+    .navigation {
+      display: none;
+      width: 100%;
+      order: 3;
+    }
+  
+    .navigation.active {
+      display: block;
+    }
+  
+    .nav-list {
+      flex-direction: column;
+      gap: 0;
+      padding: 0;
+    }
+  
+    .nav-link {
+      display: block;
+      padding: 12px;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+  
+    /* Dark Mode Button */
+    .dark-mode-btn {
+      order: 4;
+      margin: 10px auto 0;
+    }
+  
+    /* Main Content - Single Column */
+    .main-grid,
+    .grid-container,
+    .card-container {
+      grid-template-columns: 1fr;
+      padding: 10px;
+      gap: 15px;
+    }
+  
+    /* Images - Full Width */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  
+    /* Cards and Sections */
+    .card,
+    .member-card,
+    .event,
+    .current-weather,
+    .forecast {
+      width: 100%;
+      margin: 0 0 15px 0;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+  
+    /* Calendar */
+    .calendar {
+      width: 100%;
+    }
+  
+    .calendar-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    /* Footer */
+    .main-footer {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+      padding: 20px 10px;
+    }
+    #members-container.grid-view {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+        padding: 10px;
+    }
+  }
