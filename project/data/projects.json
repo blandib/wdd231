@@ -1,0 +1,50 @@
+[
+    {
+      "img": "images/pro1.webp",
+      "title": "Custom Product Shopping Flow",
+      "description": "A multi-step form for customizing a product and submitting an order, complete with a visual progress bar and animated transitions. The form transitions seamlessly between steps using the .step.active class, which fades in and out content with smooth opacity changes (transition: opacity 0.5s ease). This creates an intuitive and visually appealing experience for users, guiding them through the customization and checkout process.",
+      "url": "https://codepen.io/blandib/pen/gbObxQO"
+    },
+    {
+      "img": "images/pro2.webp",
+      "title": "Interactive Range Input",
+      "description": "This code creates an interactive audio-visual experience with sliders (range inputs) to control various features like dark mode, audio playback, visual effects, and skipping audio. This experience combines visual appeal with interactive elements, making it perfect for engaging and dynamic user interfaces.",
+      "url": "https://codepen.io/blandib/pen/RNwaveE"
+    },
+    {
+      "img": "images/pro3.webp",
+      "title": "3D Jumping and Flipping Emoji",
+      "description": "creates an animated emoji (🤾) that performs a dynamic jump and flip with 3D transformations on a visually appealing gradient background.This combination results in an interactive, visually captivating 3D animation. It’s ideal for showcasing creative designs or adding a playful touch to a webpage",
+      "url": "https://codepen.io/blandib/pen/zxOMBOv"
+    },
+    {
+      "img": "images/pro4.webp",
+      "title": "BOM Application",
+      "description": "\"BOM Application\" is a simple and interactive web application designed to allow users to add and manage their favorite Book of Mormon chapters. This project is a great example of combining HTML, CSS, and JavaScript to create a functional and user-friendly application.",
+      "url": "https://codepen.io/blandib/pen/WNLWbmO"
+    },
+    {
+      "img": "images/pro5.webp",
+      "title": "Quiz",
+      "description": "This quiz website is designed as an interactive, timed assessment platform with a focus on user experience and immediate feedback. This platform offers a well-rounded approach to quizzing, combining educational value with gamified elements.",
+      "url": "https://blandib.github.io/finalproject330/"
+    },
+    {
+      "img": "images/pro6.webp",
+      "title": "Media Query Example",
+      "description": "demonstrates a simple yet effective implementation of responsive web design principles and integrates inspiring scripture text. The design accommodates medium-sized screens and keeps content readable and organized.",
+      "url": "https://codepen.io/blandib/pen/NWEBvWa"
+    },
+    {
+      "img": "images/Screenshot 2025-04-08 181816.webp",
+      "title": "Enhanced Light Ball Rotate and Spin",
+      "description": "This is a visual web developer creation that animates a glowing, bouncing ball with rotating, color-changing effects.This combination results in a visually dynamic, glowing ball that spins, changes colors, and moves around the screen in a mesmerizing pattern.",
+      "url": "https://codepen.io/blandib/pen/QwLxaBz"
+    },
+    {
+      "img": "images/Screenshot 2025-04-08 182109.webp",
+      "title": "Filter",
+      "description": "interactive filtering and search tool for displaying drink options. Here's a detailed description: This project is a great example of combining HTML, CSS, and JavaScript to create an interactive and user-friendly interface.",
+      "url": "https://codepen.io/blandib/pen/mdYraza"
+    }
+  ]

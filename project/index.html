@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Crafted Code | Blandine</title>
+<meta name="description" content="Professional portfolio showcasing skills, projects, and experience">
+
+<meta name="author" content="Blandine Bukasa Lusamba">
+
+<meta property="og:title" content="WDD231 Projects">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://cdn.britannica.com/41/75841-050-FAAE44F0/Table-Mountain-Cape-Town-Western-Bay-South.jpg">
+
+<meta property="og:url" content="https://blandib.github.io/wdd231/chamber/directory.html">
+<meta property="og:image" content="https://blandib.github.io/wdd231/images/blan.webp" >
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@blandinebukasa2">
+<meta name="twitter:title" content="WDD231 Projects">
+<meta name="twitter:description" content=" Web Frontend Development. This course builds on your prior experience with the core technologies of web design and development including HTML, CSS, JavaScript, and design. The course focuses on user experience, accessibility, compliance, performance optimization, and basic API use. It is anticipated that students who complete this course will have very firm grasp of the core web technologies of HTML, CSS, and JavaScript and be ready for the next sequence of application courses.">
+<meta name="twitter:image" content="https://cdn.britannica.com/41/75841-050-FAAE44F0/Table-Mountain-Cape-Town-Western-Bay-South.jpg">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="styles/basic.css">
+<link rel="stylesheet" href="styles/large.css">
+<link rel="stylesheet" href="styles/smaller.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="pageProgressBar"></div>
+    </div>
+
+    <script src="script/modal.js" defer></script>
+    <script src="script/hamburger.js" defer></script>
+    <script src="script/news.js" defer></script>
+    <script src="script/weather.js" defer></script>
+
+    <header class="header">
+        <div class="branding">
+            <img src="images/favo.png" alt="Profile" class="profile-photo">
+            <div>
+                <h1>Crafted Code | Blandine</h1>
+                <p class="tagline">Creative Developer | Website</p>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <ul class="nav-list" id="main-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="projects.html" class="nav-button">Projects</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="contact.html" class="nav-button">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <div class="social-links">
+                <a href="https://github.com/blandib/blandib/edit/main/README.md" target="_blank" aria-label="GitHub">
+                    <img src="images/github.jpg" alt="GitHub">
+                </a>
+                <a href="https://codepen.io/blandib" target="_blank" aria-label="CodePen">
+                    <img src="images/codepen..jpg" alt="CodePen">
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+
+            <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Rest of your HTML content remains the same -->
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">Blandine Bukasa</h2>
+            <div class="about-image">
+                <img src="images/blan.jpg" alt="Blandine" loading="lazy">
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a passionate web developer with experience in creating dynamic and responsive websites. 
+                        I thrive on tackling challenges and exploring innovative solutions on various coding platforms. 
+                        My journey began through BYU-Pathway Wordwide, and I am now pursuing a Bachelor's degree in Software Development 
+                        at BYU-Idaho. This program allows me to continually expand my knowledge and refine my skills. 
+                        I look forward to opportunities where I can collaborate, contribute, and further enhance my
+                         expertise in this exciting field.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section with Placeholders and See More -->
+   
+   
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+    
+                <!-- GitHub -->
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub" loading="lazy">
+                        <span>GitHub</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%; background-color: #181717;"></div>
+                        <span class="percentage">90%</span>
+                    </div>
+                </div>
+    
+                <!-- CSS -->
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS" loading="lazy">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%; background-color: #1572B6;"></div>
+                        <span class="percentage">85%</span>
+                    </div>
+                </div>
+    
+                <!-- HTML -->
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML" loading="lazy">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 98%; background-color: #E34F26;"></div>
+                        <span class="percentage">98%</span>
+                    </div>
+                </div>
+    
+                <!-- JavaScript -->
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" loading="lazy">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 78%; background-color: #F7DF1E;"></div>
+                        <span class="percentage">78%</span>
+                    </div>
+                </div>
+    
+                <!-- Node.js -->
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="Node.js" loading="lazy">
+                        <span>Node.js</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%; background-color: #339933;"></div>
+                        <span class="percentage">75%</span>
+                    </div>
+                </div>
+    
+                <!-- npm -->
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <img src="https://cdn.simpleicons.org/npm/CB3837" alt="npm" loading="lazy">
+                        <span>npm</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%; background-color: #CB3837;"></div>
+                        <span class="percentage">80%</span>
+                    </div>
+                </div>
+    
+                <!-- C# (Working Alternative) -->
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" loading="lazy">
+                        <span>C#</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%; background-color: #239120;"></div>
+                        <span class="percentage">65%</span>
+                    </div>
+                </div>
+    
+                <!-- SQL Server (Working Alternative) -->
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="SQL Server" loading="lazy">
+                        <span>SQL Server</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 82%; background-color: #CC2927;"></div>
+                        <span class="percentage">65%</span>
+                    </div>
+                </div>
+    
+                <!-- Python -->
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" loading="lazy">
+                        <span>Python</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%; background-color: #3776AB;"></div>
+                        <span class="percentage">80%</span>
+                    </div>
+                </div>
+    
+                <!-- Git -->
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <img src="https://cdn.simpleicons.org/git/F05032" alt="Git" loading="lazy">
+                        <span>Git</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 87%; background-color: #F05032;"></div>
+                        <span class="percentage">87%</span>
+                    </div>
+                </div>
+    
+                <!-- JSON -->
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <img src="https://cdn.simpleicons.org/json/000000" alt="JSON" loading="lazy">
+                        <span>JSON</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 92%; background-color: #000000;"></div>
+                        <span class="percentage">92%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- News Section -->
+    <section id="news" class="section news">
+        <div class="container">
+            <h2 class="section-title">Latest News</h2>
+            <div class="news-container" id="news-container">
+                <div class="news-card">
+                    <h3>News Title 1</h3>
+                    <p class="news-date">June 15, 2023</p>
+                    <p class="news-excerpt">Brief excerpt from the news article...</p>
+                    <a href="#" class="news-link">Read More</a>
+                </div>
+                <div class="news-card">
+                    <h3>News Title 2</h3>
+                    <p class="news-date">May 28, 2023</p>
+                    <p class="news-excerpt">Brief excerpt from another news article...</p>
+                    <a href="#" class="news-link">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section >
+        <div class="container">
+            <h1>7-Day Weather Forecast</h1>
+            <div class="search-container">
+                <input type="text" id="city-input" placeholder="Enter city name">
+                <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+            </div>
+            <div class="current-weather">
+                <div class="location">
+                    <h2 id="city-name">--</h2>
+                    <p id="current-date">--</p>
+                </div>
+                <div class="weather-info">
+                    <div class="temperature">
+                        <img id="weather-icon" src="" alt="Weather Icon">
+                        <span id="current-temp">--</span>
+                        <span class="unit">°C</span>
+                    </div>
+                    <div class="details">
+                        <p id="weather-description">--</p>
+                        <p>Humidity: <span id="humidity">--</span>%</p>
+                        <p>Wind: <span id="wind-speed">--</span> km/h</p>
+                    </div>
+                </div>
+            </div>
+            <div class="forecast-container" id="forecast-container">
+                <!-- Forecast cards will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+   <!-- Resume Section -->
+   <section id="resume" class="section resume-section">
+    <div class="resume-container">
+        <div class="resume-actions">
+            <button onclick="window.print()" class="btn print-btn">
+                <i class="fas fa-print"></i> Print Resume
+            </button>
+            <a href="path/to/resume.pdf" download class="btn download-btn">
+                <i class="fas fa-download"></i> Download PDF
+            </a>
+            
+        </div>
+        
+        <div class="resume-header">
+            <h1>Your Name</h1>
+            <div class="contact-info">
+                <span><i class="fas fa-envelope"></i>Blandinebukasa118@gmail.com</span>
+                <span><i class="fas fa-phone"></i>(123) 456-0000</span>
+                <span><i class="fas fa-map-marker-alt"></i> Johannesburg, South Africa</span>
+                <span><i class="fas fa-link"></i>https://codepen.io/blandib</span>
+            </div>
+        </div>
+        
+        
+        <div class="resume-content">
+            <!-- Professional Experience -->
+            <div class="resume-category">
+                <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+                
+                <div class="resume-item">
+                    <h3>Assistant</h3>
+                    <div class="item-meta">
+                        <span>DD Line Travel Agency </span>
+                        <span>Jan 2014 - Dec 2018</span>
+                    </div>
+                    <ul>
+                        <li>Reduced maintenance payments by 5% through optimizing service schedules.</li>
+                        <li>Improved service delivery and scheduling efficiency, ensuring timely completion of tasks.</li>
+                        <li>Coordinated internal and external meetings across multiple time zones, maintaining contact databases</li>
+                    </ul>
+                </div>
+                
+                <div class="resume-item">
+                    <h3>Secretary</h3>
+                    <div class="item-meta">
+                        <span>FBT Travel Agency </span>
+                        <span>Mar 2019 - Dec 2021</span>
+                    </div>
+                    <ul>
+                        <li>Introduced a customer feedback system, boosting customer satisfaction by 30%.</li>
+                        <li>Implemented a new appointment booking system, increasing office efficiency by 15%.</li>
+                        <li>Handled high-volume phone calls and maintained accurate records with attention to detail</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Education -->
+            <div class="resume-category">
+                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                
+                <div class="resume-item">
+                    <h3>Bachelor of Science in Software Development</h3>
+                    <div class="item-meta">
+                        <span>Brigham Young University - Idaho </span>
+                        <span>Jan 2023 - Aug 2026</span>
+                    </div>
+                    <ul>
+                        <li>GPA: 3.8/4.0</li>
+                        <li>Specialization in Web Technologies</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Skills -->
+            <div class="resume-category">
+                <h2><i class="fas fa-code"></i> Technical Skills</h2>
+                <div class="resume-item">
+                    <div class="item-meta">
+                        <span><strong>Languages:</strong> JavaScript, Python, HTML/CSS, SQL,Microsoft word,Microsoft Excel,Microsoft power</span>
+                        <span><strong>Frameworks:</strong> React, Node.js, Express, Django</span>
+                    </div>
+                    <div class="item-meta">
+                        <span><strong>Tools:</strong> Git, Docker, Webpack, Figma</span>
+                        <span><strong>Databases:</strong> MongoDB, PostgreSQL, Firebase</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projects -->
+            <div class="resume-category">
+                <h2><i class="fas fa-project-diagram"></i> Key Projects</h2>
+                
+                <div class="resume-item">
+                    <h3>E-commerce Platform</h3>
+                    <div class="item-meta">
+                        <span>React, Node.js, MongoDB (Learning in Progress)</span>
+                        <span>2024</span>
+                    </div>
+                    <ul>
+                        <li>Showcased expertise in web development through hands-on projects.</li>
+                        <li>Designed interactive interfaces for product listings and user-friendly shopping experiences.</li>
+                        <li>Focused on building foundational skills in web technologies to prepare for Software development.</li>
+                    </ul>
+                </div>
+                
+                
+            </div>
+            
+            <!-- Certifications -->
+            <div class="resume-category">
+                <h2><i class="fas fa-certificate"></i> Certifications</h2>
+                <div class="resume-item">
+                    <h3>Computer Programming Certificate</h3>
+                    <div class="item-meta">
+                        <span>Brigham Young University - Idaho </span>
+                        <span>2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Crafted Code. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

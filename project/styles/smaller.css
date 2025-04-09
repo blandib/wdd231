@@ -1,0 +1,140 @@
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .item-meta {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+   /* Hide regular nav list by default */
+   .nav-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--header-bg);
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* Show when mobile-active class is added */
+.nav-list.mobile-active {
+    display: flex;
+}
+
+/* Hamburger button styles remain the same */
+.hamburger {
+    display: flex;
+}
+
+/* Keep your existing hamburger animation */
+.hamburger.active .hamburger-line:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.hamburger.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .hamburger-line:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+.header {
+    position: relative; /* Add this line */
+    z-index: 1000; /* Add this line */
+}
+
+/* Your existing mobile menu styles */
+.nav-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--header-bg);
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    z-index: 999; /* Add this line */
+}
+.about .container {
+    grid-template-areas: 
+        "title"
+        "image" 
+        "content";
+    grid-template-columns: 1fr;
+}
+
+.about-image {
+    margin-bottom: 1.5rem;
+}
+.section-title {
+    font-size: 1.5rem;
+    border-bottom-width: 2px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+.skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.news-container {
+    grid-template-columns: 1fr;
+}
+.forecast-card {
+    width: calc(33.33% - 10px);
+}
+/*project page*/
+.grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+}
+.footer-container {
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-branding, 
+.footer-right {
+    justify-content: center;
+}
+
+.footer-nav {
+    order: 3;
+    width: 100%;
+}
+
+}
+@media (max-width: 480px) {
+    .branding h1 {
+        font-size: 1.1rem;
+    }
+    
+    .tagline {
+        font-size: 0.7rem;
+    }
+    
+    .social-links img {
+        width: 20px;
+        height: 20px;
+    }
+    .forecast-card {
+        width: 100%;
+    }
+    
+    .weather-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .temperature {
+        margin-bottom: 15px;
+    }
+    /*projects page*/
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+}
