@@ -1,14 +1,14 @@
-// First, define the newsData directly in your JavaScript
-const newsData = [
-    {
+{
+    "newsData": [
+      {
         "id": 1,
         "title": "Global Climate Summit Reaches Historic Agreement",
         "category": "politics",
         "image": "https://images.unsplash.com/photo-1615751072497-5f5169febe17",
         "description": "World leaders agree on ambitious new targets to reduce carbon emissions by 2030.",
         "link": "https://www.bbc.com/news/science-environment-58982445"
-    },
-    {
+      },
+      {
         "id": 2,
         "title": "Apple Announces Revolutionary AR Headset",
         "category": "technology",
@@ -120,108 +120,5 @@ const newsData = [
         "description": "FIFA announces match dates and locations for North American tournament.",
         "link": "https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/canadamexicousa2026"
       }
-];
-
-// DOM elements
-const newsContainer = document.getElementById('newsContainer');
-const filterButtons = document.querySelectorAll('.filter-btn');
-const modal = document.getElementById('newsModal');
-const closeModal = document.querySelector('.close');
-const modalImage = document.getElementById('modalImage');
-const modalTitle = document.getElementById('modalTitle');
-const modalCategory = document.getElementById('modalCategory');
-const modalDescription = document.getElementById('modalDescription');
-const modalLink = document.getElementById('modalLink');
-
-// Image fallback handler
-function handleImageError(imgElement) {
-    imgElement.src = 'https://images.unsplash.com/photo-1579353977828-2a4eab540b9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmV3c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60';
-    imgElement.alt = 'Default news image';
-}
-
-// Display news items
-function displayNews(category = 'all') {
-    newsContainer.innerHTML = '';
-    
-    const filteredNews = category === 'all' 
-        ? newsData 
-        : newsData.filter(item => item.category === category);
-    
-    filteredNews.forEach(item => {
-        const newsCard = document.createElement('div');
-        newsCard.className = 'news-card';
-        
-        const img = document.createElement('img');
-        img.src = item.image;
-        img.alt = item.title;
-        img.className = 'news-image';
-        img.onerror = () => handleImageError(img);
-        
-        const newsContent = document.createElement('div');
-        newsContent.className = 'news-content';
-        newsContent.innerHTML = `
-            <span class="news-category">${item.category}</span>
-            <h3 class="news-title">${item.title}</h3>
-            <p class="news-description">${item.description}</p>
-            <button class="read-more" data-id="${item.id}">Read More</button>
-        `;
-        
-        newsCard.appendChild(img);
-        newsCard.appendChild(newsContent);
-        newsContainer.appendChild(newsCard);
-    });
-    
-    // Add event listeners to "Read More" buttons
-    document.querySelectorAll('.read-more').forEach(button => {
-        button.addEventListener('click', function() {
-            const newsId = parseInt(this.getAttribute('data-id'));
-            openModal(newsId);
-        });
-    });
-}
-
-// Open modal with news details
-function openModal(newsId) {
-    const newsItem = newsData.find(item => item.id === newsId);
-    
-    if (newsItem) {
-        modalImage.src = newsItem.image;
-        modalImage.alt = newsItem.title;
-        modalTitle.textContent = newsItem.title;
-        modalCategory.textContent = `Category: ${newsItem.category}`;
-        modalDescription.textContent = newsItem.description;
-        modalLink.href = newsItem.link;
-        
-        modal.style.display = 'block';
-    }
-}
-
-// Close modal
-closeModal.addEventListener('click', function() {
-    modal.style.display = 'none';
-});
-
-// Close modal when clicking outside content
-window.addEventListener('click', function(event) {
-    if (event.target === modal) {
-        modal.style.display = 'none';
-    }
-});
-
-// Filter news by category
-filterButtons.forEach(button => {
-    button.addEventListener('click', function() {
-        // Remove active class from all buttons
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        // Add active class to clicked button
-        this.classList.add('active');
-        
-        const category = this.getAttribute('data-category');
-        displayNews(category);
-    });
-});
-
-// Initial display when page loads
-document.addEventListener('DOMContentLoaded', function() {
-    displayNews();
-});
+    ]
+  }

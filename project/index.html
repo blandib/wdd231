@@ -257,7 +257,28 @@
     
     <!-- News Section -->
     <section id="news" class="section news">
-        <div class="news-container" id="news-container"></div>
+        <h1>Latest News</h1>
+    
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="politics">Politics</button>
+        <button class="filter-btn" data-category="technology">Technology</button>
+        <button class="filter-btn" data-category="sports">Sports</button>
+        <button class="filter-btn" data-category="entertainment">Entertainment</button>
+    </div>
+    
+    <div class="news-container" id="newsContainer"></div>
+<div id="newsModal" class="modal">
+    <!-- Modal content remains the same -->
+</div>
+            <span class="close">&times;</span>
+            <img id="modalImage" class="modal-image" src="" alt="">
+            <h2 id="modalTitle"></h2>
+            <p id="modalCategory"></p>
+            <p id="modalDescription"></p>
+            <a id="modalLink" href="#" target="_blank" class="read-more">Read Full Story</a>
+        </div>
+    </div>
     </section>
     <section >
         <div class="container">
