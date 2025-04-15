@@ -35,3 +35,17 @@ if (localStorage.getItem('comments') === null) {
     localStorage.setItem('comments', JSON.stringify(sampleComments));
     commentManager.renderComments();
 }
+document.getElementById('contactForm').addEventListener('submit', (e) => {
+    e.preventDefault(); // ← Critical!
+    if (formValidator.validateForm(e)) {
+      const formData = new FormData(e.target);
+      const commentData = Object.fromEntries(formData.entries());
+      commentManager.addComment(commentData);
+    }
+  });
+  // Test in console
+new CommentManager().addComment({
+    firstName: "Test",
+    lastName: "User",
+    comment: "This should appear instantly"
+  });
